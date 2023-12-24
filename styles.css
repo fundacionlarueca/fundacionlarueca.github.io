@@ -1,0 +1,666 @@
+
+*{
+	   box-sizing: border-box;
+	   margin: 0;
+	   padding: 0;
+    }
+
+    html{
+	    font-size: 62.5%; /*Esto quiere decir que 1rem=10px*/
+	    font-family: 'Roboto Slab', serif;
+    }
+
+    body{
+	   background-color:#181515;
+    }
+/*------AQUÍ INICIA EL HEADER COMÚN PARA TODAS LAS PÁGINAS-----*/
+
+    .container{
+	   width: 84%;
+	   margin: 0 auto;
+    }
+
+    .headerPrincipal .container{
+	   display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   /*border-bottom: 1px solid papayawhip;*/
+	   border-bottom: 1px solid #6ae189d1;
+	   opacity: .8;
+	   padding-top: 2rem;
+	   padding-bottom: 2rem;
+    }
+
+    .headerPrincipal-titulo{
+    	width:30%;
+       /* background:papayawhip;*/
+       background-color: #6ae189d1;
+        opacity: .8;
+	    border-radius: 10px;
+	    margin-left: 2rem;
+	}
+
+	.imagenHeader{
+	    width: 84%;
+	    margin-left: 3rem;
+    }
+
+    .headerPrincipal-nav{
+	    display: flex;
+    }
+
+    .headerPrincipal-nav_link{
+	   color: papayawhip;
+	   opacity: .8;
+	   text-decoration: none;
+	   margin-top: 1.9rem;
+	   margin-right: 1.5rem;
+	   width: 12rem;
+	   text-align: center;
+	   font-size: 1.5rem;
+	   font-weight: 100;
+    }
+
+    .headerPrincipal-nav_link::after{
+	  /*content: " | ";  */
+    }
+
+    .headerPrincipal-nav_link-cta{
+	   color:black;
+	   text-decoration: none;
+	   padding: .7rem 0;
+	   margin: 1.2rem 1.5rem 1.2rem 0;
+	   width: 8rem;
+	   text-align: center;
+	   font-size: 1.5rem;
+	   background-color: papayawhip;
+	   opacity: .8;
+	   border-radius: 8px;
+    }
+
+    .headerPrincipal-nav_link-cta:hover{
+	   font-weight: 600;
+	   transition: 0.5s;
+	   background-color: #6ae189d1;
+    }
+
+    .headerPrincipal-nav_link:hover{
+     	color: #6ae189d1;  
+    }
+
+    .headerPrincipal-nav_link:active{
+	    color:#6ae189d1;
+	    opacity: .5;
+    }
+
+    .sectionPrincipal .container{
+	    opacity: .8;
+	    padding-top: 1.6rem;
+	    padding-bottom: 1.6rem;
+	    margin-bottom: 2rem;
+    }
+
+     /* ----------------- AQUÍ TERMINA EL HEADER COMÚN PARA TODAS LAS PÁGINAS----------------- */
+
+     /* -----------------AQUÍ COMIENZA EL MAIN  DEL INDEX.HTML ----------------- */
+
+    .contenidoPrincipal{
+	    margin-left: 3rem;
+    }
+    .contenidoPrincipal .container{
+	    flex-direction: column;
+	    align-items: initial;
+	    text-align: center;
+	    opacity: .8;
+	    padding-bottom: 2rem;
+    }
+
+    .subtitulo1{
+    	font-size: 4rem;
+        margin-bottom: 3rem;
+        padding-top: 1.8rem;
+        line-height: 1;
+        border-left: 1px solid #ffefd52e;
+        border-right: 1px solid #ffefd52e;
+        width: 36rem;
+        margin-left: 36rem;
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+
+    }
+
+    .subtitulo1 a{
+    	text-decoration: none;
+    	color:#6ae189d1;
+    	opacity: .6;
+        font-weight: 300;
+    }
+
+    .subtitulo1 a:hover{
+    	color:papayawhip;
+    }
+
+    span{
+    	font-size: 1.7rem;
+    }
+    
+    .contenidoPrincipal-servicios{
+	    display: flex;
+	    flex-wrap: wrap;	
+    }
+
+    .contenidoPrincipal-servicios-link{
+	    display: flex;
+	    width: 18%;
+	    border:1px solid papayawhip;
+	    opacity: .8;
+	    border-radius: 5px;
+	    margin: 0.7rem;
+	    padding: 1rem;
+    }
+    .contenidoPrincipal-servicios-link:hover{
+        border: 1px solid #6ae189d1;
+    }
+
+
+    .contenidoPrincipal-servicios-link a{
+	    color:papayawhip;
+	    opacity: .8;
+	    font-weight: lighter;
+	    font-size: 1.8rem;
+	    text-decoration: none;
+    }
+
+/*.......AQUÍ TERMINAN LOS  ESTILOS DEL MAIN DEL INDEX.HTML......*/
+
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL SECTION DEL INDEX.HTML......*/
+
+
+	section figure{
+		background: #181515;
+		margin-top: 0.4rem;
+		width: 84%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.image{
+		height: 30rem;
+		border-radius: 10px;
+		margin-left: 13rem;
+	}
+
+	figcaption p{
+		color:papayawhip;
+		opacity: .8;
+		margin-left: 3rem;
+		text-align: center;
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+		margin-top: 7.5rem;
+		font-weight: 100;
+		}
+
+/*.......AQUÍ TERMINAN LOS  ESTILOS DEL SECTION DEL INDEX.HTML......*/
+
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL FOOTER COMUNES PARA TODAS LAS PÁGINAS......*/
+
+    .footer{
+	    text-align: center;
+	    background-color: black;
+	    padding-top: 2rem;
+    }
+
+    .footer .row{
+	    width: 100%;
+	    padding: 0.6% 0%;	
+	    font-size: 0.9em;
+    }
+
+    .footer .row a{
+	    text-decoration: none;
+	    color:papayawhip;
+	    opacity: .8;
+	    font-size: 1.5rem;
+    }
+
+    .footer .row a:hover{
+	    font-size: 1.5rem;	
+	    color:white;
+    }
+
+    .footer .row ul li{
+	    display: inline-block;
+	    margin: 0px 30px;
+    }
+
+    .footer .row a i{
+	    font-size: 2.5rem;
+	    margin: 0px 3%;
+	    color: #6ae189d1;
+    }
+
+    .footer .row a i:hover{	
+    	color:papayawhip;
+    }
+
+    .footer .row-nav{
+	    font-size: 0.5rem;
+	    border-radius: 5px;
+	    padding: .6rem;
+    }
+
+    .row .row .row-nav{
+	    color:papayawhip;
+	    opacity: .8;
+	    font-weight: 100;
+    }
+
+    .row .row .row-nav:hover{
+	    border: 1px solid grey;
+    }
+
+    .row .row .row-nav-cta {
+	    border-radius: 8px;
+	    padding-top: 0.7rem;
+	    padding-bottom: 0.7rem;
+	    padding-left: 1.1rem;
+	    padding-right: 1.1rem;
+	    border: 1px solid black;
+	    background-color: papayawhip;
+	    opacity: .6;
+	    color:black;
+	    font-size: 1.4rem;
+	    font-weight: 500;  
+	}
+
+    .row .row .row-nav-cta:hover{
+        font-size: 1.5rem;
+        color:black;
+        background-color: #6ae189d1;
+        font-weight: bold;
+    }
+
+    .copy{
+        color:#ffffff6e;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 200;
+    } 
+
+    .copyb{
+        color:#ffffff6e;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        font-weight: 200;
+    } 
+/*.......AQUÍ TERMINAN LOS  ESTILOS DEL FOOTER COMUNES PARA TODAS LAS PÁGINAS......*/
+
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL MAIN PÁGINA PUBLICACIONES.HTML......*/
+
+    .mainSection-products{
+	    padding: 3% 4% 0 3%;
+	    padding-top: .5%;
+	    text-align: center;  
+    }
+
+    .descripcionResena{
+    	color:#6ae189d1;
+    	font-size: 1.8rem;
+    	text-decoration: none;
+    }
+
+    .parrafo{
+	    font-size: 1.6rem;
+	    padding-top: 0.8rem;
+    }
+
+    h1{
+	    font-weight: 100;
+	    color:#6ae189d1;
+	    line-height: 1.2;
+    }
+
+    .productos{
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    margin-top: 20px;
+	    padding-top: 1%;
+    }
+
+    .product-container{
+	    width: 30%;
+    }
+
+    .img-quimeras{
+	    width: 20vw;
+	    height: 60vh;
+	    border-top: 3px solid #6f1010a1;
+	    border-left: 3px solid #6f1010a1;
+    }
+    .abc{
+	    width: 20vw;
+	    height: 60vh;
+    }
+
+    .img-pluma{
+	    width: 20vw;
+	    height: 60vh;
+	    border-top: 3px solid #e18e0c87;
+	    border-left: 3px solid #e18e0c87;
+    }
+
+    .img-mosaico{
+	    width: 20vw;
+	    height: 60vh;
+	    border-top: 3px solid #317e3170;
+	    border-left: 3px solid #317e3170;
+    }
+   
+    .img-nosotras{
+	    width: 20vw;
+	    height: 60vh;
+	    border-left: 3px solid #5e545f70;
+	    
+    }
+
+    .img-aprendiz{
+	    width: 20vw;
+	    height: 60vh;
+	    border-left: 3px solid #3a3aa7;
+	    border-top: 3px solid #3a3aa7;
+    }
+
+    .description{
+	    color:papayawhip;
+	    opacity: .8;
+	    font-size: 1.7rem;
+	    margin-top: 1.5rem;
+	    line-height: ;
+	    margin-bottom: 3.5rem;
+	    font-weight: lighter;
+    }
+
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL MAIN PÁGINA RESENA.HTML......*/
+
+     .mainResena{
+     	background-color: #ffffffe6;
+     	opacity: .9;
+     	margin:auto 0;
+     	text-align: center;
+     	font-size: 1.8rem;
+     	padding: 2rem 0 2rem 0;
+     }
+
+     .tituloResena{
+     	color:black;
+     	font-weight: 500;
+     	margin-bottom: 2rem;
+     }
+
+     .subtituloResena{
+     	color:#000000c4;
+     	font-weight: 500;
+     	margin-bottom: 1rem;
+     	font-size: 1.8rem;
+     }
+
+     .resena{
+     	font-weight: 200;
+     	color:black;
+     }
+
+     .editor{
+     	color:#000000c4;
+     	font-weight: 500;
+     	margin-bottom: 1rem;
+     	font-size: 1.8rem;
+     }
+
+     
+
+
+
+/*.......AQUÍ TERMINAN LOS  ESTILOS DEL MAIN PAGINA PUBLICACIONES.HTML......*/
+
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL MAIN PÁGINA COTIZACION.HTML......*/
+
+    .mainPrincipal-cotizacion{
+	    padding-top: 12rem;  
+    }
+
+    .mainPrincipal-mensajeCotizacion{
+	    text-align: center;
+	    color:papayawhip;
+	    opacity: .8;
+	    font-size: 3.5rem;
+	    line-height: 2rem;
+	    font-weight: 100;
+	    padding: 1.5rem;
+	    padding-bottom: 14rem;
+    }
+
+/*.......AQUÍ TERMINAN LOS  ESTILOS DEL MAIN PÁGINA COTIZACION.HTML......*/
+/*.......AQUÍ COMIENZAN LOS  ESTILOS DEL MAIN PÁGINA CONTACTO.HTML......*/
+
+    .contact-container{
+	    padding-top: 20px;
+	    padding-bottom: 1px;
+	    text-align: center;
+	}
+
+    .contacto{
+	    color:papayawhip;
+	    opacity: .8;
+	    font-size: 22px;  
+	    font-weight: 100; 
+	    font-family:'Roboto Slab' ;
+    }
+
+    .form{
+	    margin-top: 2rem;
+	    margin-bottom: 1rem;
+    }
+
+    .form-label{
+
+    }
+
+    .form-input {
+	    height: 4rem;
+	    width: 26rem;
+	    background-color: #211e1ec9;
+	    border-radius: 0.5rem;
+	    border: 1px solid papayawhip;
+	    opacity: .8;
+	    font-size: 1.6rem;
+	    font-weight: lighter;
+	    color:papayawhip;
+	    font-family: 'Roboto Slab';
+    }
+
+    .form-input:hover{	
+       border: 1px solid papayawhip; 
+    }
+
+    .form-textarea{
+	    background-color:#211e1ec9;
+	    height: 200px;
+	    padding:12px;
+	    margin-bottom: 20px;
+	    border: 1px solid papayawhip;
+	    border-radius: 10px;
+	    font-family: 'Roboto Slab';
+    } 
+
+    .form-input::placeholder{
+	    color:papayawhip;
+    }
+
+    .form .form-textarea{
+	    width: 500px;
+	    max-height: 150px;
+	    min-height: 70px;
+	    color:papayawhip;
+	    opacity: .8;
+	    font-size: 1.6rem;
+	    font-weight: lighter;
+    }
+
+    .form .form-textarea::placeholder{
+	    color:papayawhip;
+	    opacity: .8;
+    }
+
+    .form .btn-submit{
+	    outline: none;
+	    font-size: 20px;
+	    border-radius: 10px;
+	    padding:15px;
+	    cursor:pointer;
+	    border:1px solid black;
+    }
+
+    .btn-submit{
+    	font-family: 'Roboto Slab';
+    	background-color: papayawhip;
+    	opacity: .8;
+ 
+    }
+    .btn-submit:hover{
+    	background-color: #6ae189d1;
+	    font-weight: 600;
+    }
+
+     /*.......AQUÍ COMIENZAN LOS  ESTILOS DE AMIGOS.HTML......*/
+     .amigos{
+    	opacity: .4;
+    	font-size: 2.5rem;
+    	text-align: center;
+    	margin-bottom: 6rem;
+    	padding-top: 3rem;
+    	color:papayawhip;
+    	font-weight: 200;
+    }
+
+    .mainPrincipal{
+    	width: 100%;
+    	margin: 0 auto;
+    	background-color: ;
+    }
+
+    .mainPrincipal-amigos{
+    	font-size: 1.4rem;
+    	color:white;
+    	text-decoration: none;
+    	padding: .5rem;
+    }
+
+    .mainPrincipal-amigos:hover{
+    	color:#6ae189d1;
+    }
+
+
+
+    /*.......AQUÍ COMIENZAN LOS  ESTILOS DE TEXTOUNO.HTML......*/
+
+    .mainAmigos-textos{
+    	background-color: white;
+    	padding-bottom: 3rem;	
+    	background-image: url();
+    	opacity: .8;
+    	background-repeat: repeat;
+    }
+
+    .containerTextos{
+    	display: inline-block;
+
+    }
+
+    .mainAmigos-textoUno{
+    	color:black;
+    	margin: auto;
+    	width: 60%;
+    	font-size: 2rem;
+    	font-weight: 400;
+    	padding-top: 6rem;
+    	padding-bottom: 4rem;
+    	line-height: 1.5;
+    	font-family: 'Roboto';
+    }
+
+    .camus{
+    	text-align: center;
+    	padding-top: 2rem;
+    	color:black;
+    	font-weight: 600;
+    	font-size: 2.2rem;
+    }
+
+    .btnSubmit-dos{
+    	display: block;
+    	width: 20rem;
+    	margin: 0 auto;
+        font-size: 1.8rem;
+        background-color: black;
+        color:white;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid #8080806e;
+        border-radius: 5px;
+    }
+
+    .btnSubmit-dos:hover{
+    	color:#6ae189d1;
+    }
+
+    /*....ESTILOS COMUNES.....*/
+
+    .volver{
+    	background-color: #6ae189d1;
+    	color:black;
+    	border: 1px solid grey;
+    	border-radius: 5px;
+    	text-decoration: none;
+    	padding: .5rem;
+    	font-size: 1.5rem;
+    }
+
+    .volver:hover{
+    	color:papayawhip;
+    	background-color: black;
+    }
+
+     /*.......AQUÍ COMIENZAN LOS  ESTILOS DE TEXTOTRES.HTML......*/
+
+   .mainAmigos-textoTres{
+    	color:black;
+    	margin-left:30rem ;
+    	width: 60%;
+    	font-size: 2rem;
+    	font-weight: 400;
+    	padding-top: 6rem;
+    	padding-bottom: 4rem;
+    	line-height: 1.5;
+    	font-family: 'Roboto';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	<!--METADATOS-->
+	  <meta charset="UTF-8">
+	  <meta name="author" content="Jaime Hernando García Henao">
+	  <meta name="description" content="Esta página es una alternativa si quieres publicar libros o mejorar la redacción de tus textos. Somos una editorial independiente.">
+	  <meta name="keywords" content="edición y corrección de textos, impresión de libros, publlicación de libros, diseño de páginas Web.">
+	  <meta name="robots" content="index,follow">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--GOOGLE FONTS.....TIPOS DE FUENTE-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link  href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <!--TITULO DE LA PÁGINA QUE APARECERÁ EN LA PESTAÑA-->
+	  <title>Jaime García & La Rueca Editores</title>
+
+	  <!--LINK DEL FAVICON-->
+	  <link rel="icon" type="image/x-icon" href="imagenes/favi1.png">
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+	  <!--ENLACE CON LA HOJA DE ESTILOS-->
+	  <link rel="stylesheet" type="text/css" href="styles.css">	
+   </head>
+<body>
+	<!-----AQUÍ INICIA EL HEADER----->
+	<header class="headerPrincipal">
+		<div class="container">
+			<h1 class="headerPrincipal-titulo">
+				<img class="imagenHeader" src="imagenes/lema-rueca.png" alt="imagen del encabezado">	
+			</h1>
+			<nav class="headerPrincipal-nav">
+				<a class="headerPrincipal-nav_link"  href="index.html">Lo que hacemos</a>
+				<a class="headerPrincipal-nav_link"  href="publicaciones.html">Publicaciones</a>
+			    <a class="headerPrincipal-nav_link"  href="cotizacion.html">Cotización</a>
+			    <a class="headerPrincipal-nav_link"  href="amigos.html">Nuestros amigos escriben</a>
+			    <a class="headerPrincipal-nav_link-cta"  href="contacto.html">Contacto</a>
+			    
+			 </nav>   
+		</div>	
+	</header>
+	<!-----AQUÍ TERMINA EL HEADER----->
+
+	<!-----AQUÍ INICIA EL MAIN DE LA PÁGINA CONTACTO.HTML---->
+
+	<main>
+		<div class="main_section-contact">
+			<div class="contact-container">
+				<h2 class="contacto">FORMULARIO DE CONTACTO</h2>
+				<form class="form" action="contacto.html" method="post" >
+					<label   class="form-label" for="nombre"></label>
+					<input class="form-input" type="text" id="nombre" placeholder="Nombre"><br><br>
+
+					<label class="form-label" for="telefono"></label>
+					<input  class="form-input" type="telefono" id="telefono" placeholder="Teléfono"><br><br>
+
+					<label class="form-label" for="correo"></label>
+					<input class="form-input" type="email" id="correo"  placeholder="Correo"><br><br>
+
+					<label  for="mensaje" ></label>
+					<textarea class="form-textarea" id="mensaje"  placeholder="Escribe aquí tu mensaje"></textarea><br><br>
+					<input type="submit" class="btn-submit" value="Enviar consulta">	
+				</form>	
+			</div>
+		</div>
+	</main>
+
+
+	<!-------EJEMPLO DE OTRO FORMULARIO---------
+
+		<body>
+			<form action="">
+				<label for="nombre">
+					<span>¿Cuál es tu nombre?</span>
+					<input type="text" id="nombre">	
+				</label>
+
+				<label for="inicio-platzi">
+					<span>¿Cuál es tu nombre?</span>
+					<input type="text" id="inicio-platzi">	
+				</label>
+
+				<label for="horario">
+					<span>¿En qué horario estudias?</span>
+					<input type="time" id="horario">	
+				</label>	
+			</form>
+		</body>
+		------------------------------>
+
+		<!-------EJEMPLO DE OTRO FORMULARIO---------
+
+			<body>
+			<form action="">
+				<label for="hora">
+					<span>Hora</span>
+					<input type="time" id="hora" name="hora">	
+				</label>
+
+				<label for="dia">
+					<span>Día</span>
+					<input type="date" id="dia" name="dia">	
+				</label>
+
+				<label for="semana">
+					<span>Semana</span>
+					<input type="week" id="semana" name="semana">	
+				</label>
+
+				<label for="mes">
+					<span>Mes</span>
+					<input type="month" id="mes" name="mes">	
+				</label>
+				<input type="submit">	
+			</form>
+		</body>
+		-------------------------->
+
+		<!-------EJEMPLO DE OTRO FORMULARIO---------
+
+			<body>
+			<form action="">
+				<label for="calendario">
+					<span>Calendario</span>
+					<input type="datetime-local" id="calendario" name="calendario">	
+				</label>
+				<input type="submit">
+
+		------------------------------>
+		<!-------EJEMPLO DE OTRO FORMULARIO---------
+
+		<body>
+			<main>
+				<form action="">
+					<label for="nombre">
+						<span>¿Cuál es tu nombre?</span>
+						<input type="text" name="nombre" id="nombre" autocomplete="name" required>
+					</label>
+
+					<label for="correo">
+						<span>¿Cuál es tu correo?</span>
+						<input type="email" name="correo"id="correo" autocomplete="email" required>
+					</label>
+
+					<label for="país">
+						<span>¿En qué país vives?</span>
+						<input type="text" name="pais" id="pais autocomplete="country" required> 
+					</label>
+
+					<label for="cp">
+						<span>¿cuál es tu código postal?</span>
+						<input type="text" name="cp" id="cp" autocomplete="postal code"required>
+					</label>
+					<input type="submit">
+				</form>
+			</main>	
+		</body>
+		------------------------------>
+
+		<!-------EJEMPLO DE OTRO FORMULARIO PERO USANDO SELECT---------
+
+			<body>
+				<main>
+					<input list="cursos">
+					<datalist id="cursos">
+						<option value="JavaScript"></option>
+						<option value="HTML5"></option>
+						<option value="CSS3"></option>
+						<option value="Web Standards"></option>
+					</datalist>
+				</main>
+			</body>
+
+			------------------------------>
+           <!-------EJEMPLO DE OTRO FORMULARIO CON SUBMIT VS BUTTON---------
+
+           	<input type="submit">
+
+           	<input type="submit" value="Nombre">
+
+           	<button>Enviar</button>
+
+           	<button type="submit">¿Qué color te gusta?</button>
+
+           	------------------------------>
+
+
+
+	<!-----AQUÍ TERMINA EL MAIN DE LA PÁGINA CONTACTO.HTML----->
+
+	<!-----AQUÍ INICIA EL FOOTER------->
+
+	<footer>
+		<div class="footer">
+			<div class="row">
+				<a href="#"><i class="fa fa-whatsapp"></i></a>
+				<a href="https://github.com/jaimegarhenao"><i class="fa fa-github"></i></a>
+				<a href="https://www.instagram.com/jaimegarhenao"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/jaime-henao-"><i class="fa fa-linkedin"></i></a>	
+			</div>
+
+			<div class="row">
+				<ul class="row">
+					
+					<li><a class="row-nav" href="index.html">Lo que hacemos</a></li>
+					<li><a class="row-nav"href="publicaciones.html">Publicaciones</a></li>
+					<li><a class="row-nav"href="cotizacion.html">Cotización</a></li>
+					<li><a class="row-nav"href="amigos.html">Nuestros amigos escriben</a></li>
+					<li><a class="row-nav-cta" href="contacto.html">Contacto</a></li>
+				</ul>	
+			<div class="copy" >
+			     <p class="copy">Este sitio ha sido diseñado por Fundación La Rueca & La Rueca Editores<br>
+			     <p class="copyb">Jaime Hernando García Henao - 2023 - Itagüí-Antioquia</p>
+		  </div>
+		</div>
+	</footer>
+</body>
+</html>

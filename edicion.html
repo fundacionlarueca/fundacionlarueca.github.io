@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOOTSTRAP</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link  href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <style>
+
+	*{
+	   box-sizing: border-box;
+	   margin: 0;
+	   padding: 0;
+    }
+
+    html{
+	    font-size: 62.5%; /*Esto quiere decir que 1rem=10px*/
+    }
+
+    body{
+	   background-color:#181515;
+    }
+
+    /*........AQUÍ INICIAN LOS ESTILOS DEL HEADER.....*/
+
+    .container{
+	   width: 84%;
+	   margin: 0 auto;
+    }
+
+    .headerPrincipal .container{
+	   display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   border-bottom: 1px solid #6ae189d1;
+	   padding-top: 2rem;
+	   padding-bottom: 2rem;
+    }
+
+    .headerPrincipal-titulo{
+    	width:30%;   
+	}
+
+	.imagenHeader{
+	    width: 84%;
+	    margin-left: 3rem;
+	    background-color: #6ae189d1;
+	    border-radius: 10px;
+    }
+
+    .headerPrincipal-nav{
+	    display: flex;
+    }
+
+    .headerPrincipal-nav_link{
+	   text-decoration: none;
+	   padding-top:0.7rem;
+	   margin-top: 1.2rem;
+	   margin-right: 1.5rem;
+	   transition: 0.5s;
+	   width: 12rem; 
+	   font-size: 1.5rem;
+	   color:papayawhip;
+	   font-weight: 400;
+    }
+
+    /*.headerPrincipal-nav_link::after{
+	  content: " | ";  
+	  color:white;
+    }*/
+
+    .headerPrincipal-nav_link-cta{
+	   color: black;
+	   text-decoration: none;
+	   padding-top:0.7rem;
+	   padding-bottom: 0.7rem;
+	   margin-top: 1.2rem;
+	   margin-right: 1.5rem;
+	   transition: 0.5s;
+	   width: 8rem;
+	   text-align: center;
+	   font-size: 1.6rem;
+	   background-color: papayawhip;
+	   opacity: .8;
+	   border-radius: 8px;
+	   border: 1px solid black;
+    }
+
+    .headerPrincipal-nav_link-cta:hover{
+	   font-weight: lighter;
+	   border:1px solid white;
+	   border-radius: 5px;
+	   font-weight: 600;
+	   background-color: #6ae189d1;
+    }
+
+    .headerPrincipal-nav_link:hover{
+	    color:#6ae189d1;
+	    font-weight: lighter;
+    }
+
+    .headerPrincipal-nav_link:active{
+	    color:red;
+    }
+
+     /*........AQUÍ TERMINAN LOS ESTILOS DEL HEADER.....*/
+     /*........AQUÍ INICIAN LOS ESTILOS DEL SECTION-CAROUSEL.....*/
+
+    .sectionPrincipal .container{
+	    border-bottom: 1px solid #6ae189d1;
+	    padding-top: 1.6rem;
+	    padding-bottom: 1.6rem;
+	    margin-bottom: 2rem;
+    }
+
+    section{
+    	padding-bottom: 2.1rem;
+    }
+
+	.image{
+		height: 36rem;
+		border-radius: 10px;
+		margin-left: 25rem;
+		margin-top: 3rem;
+		opacity: .4;
+	}
+
+    h2{
+		margin-top: 1rem;
+		color:papayawhip;
+		opacity: .8;
+		font-size: 3rem;
+		text-align: center;
+		margin-left: 7rem;
+	}
+
+	h5{
+		color: #6ae189d1;
+		opacity: .8;
+		font-size: 3rem;
+		width:50rem;
+		margin-left: 52rem;
+	}
+
+	p{
+		color:papayawhip;
+		opacity: .8;
+		text-align: center;
+		font-weight: lighter;
+		font-size: 1.8rem;
+	}
+
+	/*........AQUÍ TERMINAN LOS ESTILOS DEL SECTION-CAROUSEL.....*/
+	/*........AQUÍ INICIAN LOS ESTILOS DEL FOOTER.....*/
+
+
+	.footer{
+	   text-align: center;
+    }
+
+    .footer .row{
+	    width: 100%;
+	    display: inline-block;
+	    padding: 0.6% 0%;	
+    }
+
+    .footer .row a{
+	    text-decoration: none;
+	    transition: 0.5s;
+	    color:papayawhip;
+	    font-size: 1.5rem;
+    }
+
+    .footer .row a:hover{
+	    color:white;	
+    }
+
+    .footer .row a i{
+	    font-size: 2em;
+	    margin: 0px 3%;
+	    display: inline-block;
+    }
+
+    .footer .row a i:hover{
+    	color:#6ae189d1;
+    }
+
+    .row .row .row-nav-cta {
+	    font-size: 1.6rem;
+	    border-radius: 8px;
+	    padding-top: 0.7rem;
+	    padding-bottom: 0.7rem;
+	    padding-left: 1.1rem;
+	    padding-right: 1.1rem;
+	    border: 1px solid black;
+	    background-color: #0091d7;
+	    color:white;
+    }
+
+    .row .row .row-nav-cta:hover{
+        border:1px solid white;
+        font-weight: lighter;
+    }
+
+    .copy{
+        text-align: center;
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+    } 
+
+    .copyb{
+        font-size: 1.2rem;    
+    } 
+
+	</style>
+</head>
+<body>
+
+	<!-----AQUÍ INICIA EL HEADER----->
+	<header class="headerPrincipal">
+		<div class="container">
+			<h1 class="headerPrincipal-titulo">
+				<img class="imagenHeader" src="imagenes/lema-rueca.png" alt="imagen del encabezado">	
+			</h1>
+			<nav class="headerPrincipal-nav">
+				<a class="headerPrincipal-nav_link"  href="index.html">Lo que hacemos</a>
+				<a class="headerPrincipal-nav_link"  href="publicaciones.html">Publicaciones</a>
+			    <a class="headerPrincipal-nav_link"  href="cotizacion.html">Cotización</a>
+			    <a class="headerPrincipal-nav_link-cta"  href="contacto.html">Contacto</a>	    
+			</nav>   
+		</div>	
+	</header>
+	<!-----AQUÍ TERMINA EL HEADER----->
+	<!-----AQUÍ INICIA EL SECTION----->
+   <section class="sectionPrincipal">
+		<div class="container">
+		    <figure>
+			    <img  class="image" src="imagenes/pexels-foto4.jpeg" alt="Esta es una imagen de corrección de textos">
+			    <figcaption>
+				   <h5>Edición</h5>
+                   <p>Editamos tu obra y la adaptamos a normas de estilo.</p>
+			    </figcaption>
+		    </figure>
+	    </div>
+	</section>
+
+<! AQUÍ INICIA EL FOOTER--->
+
+<footer>
+		<div class="footer">
+			<div class="row">
+				<a href="#"><i class="fa fa-whatsapp"></i></a>
+				<a href="https://github.com/jaimegarhenao"><i class="fa fa-github"></i></a>
+				<a href="https://www.instagram.com/jaimegarhenao"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/jaime-henao-"><i class="fa fa-linkedin"></i></a>	
+			</div>
+		</div>
+		<div class="copy">
+			<p class="copy">Este Sitio Web fue diseñado por Fundación La Rueca & La Rueca Editores<br>
+			<p class="copyb">Jaime Hernando García Henao - 2023 - Itagüí-Antioquia</p>
+		</div>
+</footer>
+<! AQUÍ TERMINA EL FOOTER--->
+
+</body>
+</html>
+
+
