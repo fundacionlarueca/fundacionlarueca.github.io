@@ -49,6 +49,10 @@
 	    display: flex;
     }
 
+	.link_contacto{
+		text-decoration: none;
+	}
+
     .headerPrincipal-nav_link{
 	   color: papayawhip;
 	   opacity: .8;
@@ -448,8 +452,8 @@
 /*.......AQUÍ COMIENZAN LOS  ESTILOS DEL MAIN PÁGINA CONTACTO.HTML......*/
 
     .contact-container{
-	    padding-top: 20px;
-	    padding-bottom: 1px;
+	    padding-top: 10rem;
+	    padding-bottom: 10rem;
 	    text-align: center;
 	}
 
@@ -459,6 +463,7 @@
 	    font-size: 22px;  
 	    font-weight: 100; 
 	    font-family:'Roboto Slab' ;
+		padding-top: -8rem;
     }
 
     .form{
@@ -516,19 +521,17 @@
 	    opacity: .8;
     }
 
-    .form .btn-submit{
-	    outline: none;
+    .btn-submit{
+    	font-family: 'Roboto Slab';
+    	background-color: papayawhip;
+    	opacity: .8;
+		outline: none;
 	    font-size: 20px;
 	    border-radius: 10px;
 	    padding:15px;
 	    cursor:pointer;
 	    border:1px solid black;
-    }
-
-    .btn-submit{
-    	font-family: 'Roboto Slab';
-    	background-color: papayawhip;
-    	opacity: .8;
+		text-decoration: none;
  
     }
     .btn-submit:hover{
